@@ -163,7 +163,7 @@
             }
             .logo{
                 position: fixed;
-                left: 1150px;
+                left: 1100px;
                 top: 20px;
                 display: flex;
                 justify-content: center;
@@ -237,7 +237,7 @@
                 position: absolute;
                 width: 670px;
                 height: 360px;
-                bottom: 42%;
+                bottom: 41%;
                 left: 43%;
 
             }
@@ -679,6 +679,7 @@
         }
         .open{
         display: flex !important;
+
 
 
 
