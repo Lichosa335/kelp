@@ -1,0 +1,500 @@
+      * {
+            -webkit-touch-callout: none; /* iOS Safari */
+            -webkit-user-select: none; /* Safari */
+            -khtml-user-select: none; /* Konqueror HTML */
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Нестандартное свойство */
+
+            /* Для браузеров, поддерживающих стандартное свойство */
+            user-select: none;
+     }
+
+      .blink-button {
+        width: 24px;
+        height: 24px;
+        background: linear-gradient(135deg, #ff0000, #cc0000);
+        border-radius: 50%;
+        border: 2px solid #fff;
+        box-shadow: 0 0 10px rgba(255, 0, 0, 0.7),
+                    inset 0 0 5px rgba(255, 255, 255, 0.5);
+        cursor: pointer;
+        position: relative;
+        animation: pulse 1s infinite ease-in-out;
+        transition: all 0.2s;
+      }
+
+      .blink-button:active {
+        transform: scale(0.9);
+      }
+
+      .blink-button::after {
+        content: '';
+        position: absolute;
+        top: -4px;
+        left: -4px;
+        right: -4px;
+        bottom: -4px;
+        border-radius: 50%;
+        border: 1px solid red;
+        animation: pulse-ring 1.5s infinite;
+      }
+
+      @keyframes pulse {
+        0%, 100% {
+          box-shadow: 0 0 10px rgba(255, 0, 0, 0.7),
+                      inset 0 0 5px rgba(255, 255, 255, 0.5);
+        }
+        50% {
+          box-shadow: 0 0 20px rgba(255, 0, 0, 0.9),
+                      0 0 30px rgba(255, 0, 0, 0.6),
+                      inset 0 0 8px rgba(255, 255, 255, 0.8);
+        }
+      }
+
+      @keyframes pulse-ring {
+        0% {
+          transform: scale(0.8);
+          opacity: 1;
+        }
+        100% {
+          transform: scale(1.5);
+          opacity: 0;
+        }
+      }
+      .cor{
+         position: absolute;
+         top: 53%;    /* Отступ сверху */
+         left: 72.5%;   /* Отступ слева */
+         z-index: 1000; /* Чтобы была поверх других элементов */
+      }
+      .br{
+         position: absolute;
+         top: 73%;    /* Отступ сверху */
+         left: 34%;   /* Отступ слева */
+         z-index: 1000; /* Чтобы была поверх других элементов */
+      }
+      .in{
+         position: absolute;
+         top: 56%;    /* Отступ сверху */
+         left: 61.5%;   /* Отступ слева */
+         z-index: 1000; /* Чтобы была поверх других элементов */
+      }
+      .ru{
+         position: absolute;
+         top: 37%;    /* Отступ сверху */
+         left: 60%;   /* Отступ слева */
+         z-index: 1000; /* Чтобы была поверх других элементов */
+      }
+      .kunad {
+         position: absolute;
+         top: 35%;    /* Отступ сверху */
+         left: 20%;   /* Отступ слева */
+         z-index: 1000; /* Чтобы была поверх других элементов */
+      }
+      .Shu {
+         position: absolute;
+         top: 50%;    /* Отступ сверху */
+         left: 22%;   /* Отступ слева */
+         z-index: 1000; /* Чтобы была поверх других элементов */
+      }
+      .Afric {
+         position: absolute;
+         top: 60%;    /* Отступ сверху */
+         left: 50%;   /* Отступ слева */
+         z-index: 1000; /* Чтобы была поверх других элементов */
+      }
+      .Ipon {
+         position: absolute;
+         top: 48%;    /* Отступ сверху */
+         left: 76%;   /* Отступ слева */
+         z-index: 1000; /* Чтобы была поверх других элементов */
+      }
+      .Citae {
+         position: absolute;
+         top: 45%;    /* Отступ сверху */
+         left: 65%;   /* Отступ слева */
+         z-index: 1000; /* Чтобы была поверх других элементов */
+      }
+      .Evrop {
+         position: absolute;
+         top: 45%;    /* Отступ сверху */
+         left: 47%;   /* Отступ слева */
+         z-index: 1000; /* Чтобы была поверх других элементов */
+      }
+
+      .germ {
+         position: absolute;
+         top: 57%;    /* Отступ сверху */
+         left: 32%;   /* Отступ слева */
+         z-index: 1000; /* Чтобы была поверх других элементов */
+      }
+      .nid{
+         position: absolute;
+         top: 52%;    /* Отступ сверху */
+         left: 17%;   /* Отступ слева */
+         z-index: 1000; /* Чтобы была поверх других элементов */
+      }
+      .frun{
+         position: absolute;
+         top: 65%;    /* Отступ сверху */
+         left: 20%;   /* Отступ слева */
+         z-index: 1000; /* Чтобы была поверх других элементов */
+      }
+      .tv{
+         position: absolute;
+         top: 59%;    /* Отступ сверху */
+         left: 72%;   /* Отступ слева */
+         z-index: 1000; /* Чтобы была поверх других элементов */
+      }
+      .It{
+         position: absolute;
+         top: 74%;    /* Отступ сверху */
+         left: 34%;   /* Отступ слева */
+         z-index: 1000; /* Чтобы была поверх других элементов */
+      }
+    /* На планшетах */
+    @media (max-width: 992px) {
+        .blink-button {
+            width: 15px;
+            height: 15px;
+        }
+    }
+
+    /* На телефонах */
+    @media (max-width: 768px) {
+        .blink-button {
+            width: 10px;
+            height: 10px;
+            border-width: 1px;
+        }
+    }
+
+
+        .cs-btn {
+            width: 1600px;
+            height: 160px;
+            border-width: 1px;  /* Точечки тоньше */
+            z-index: 1000;
+        }
+    /* На планшетах */
+    @media (max-width: 992px) {
+        .cs-btn {
+            width: 20px;
+            height: 100px;
+        }
+    }
+
+    /* На телефонах */
+    @media (max-width: 768px) {
+        .cs-btn {
+            width: 16px;
+            height: 160px;
+            border-width: 1px;  /* Точечки тоньше */
+        }
+    }
+
+    .circle-text-css {
+        width: 200px;
+        height: 200px;
+        position: relative;
+        display: inline-block;
+        animation: rotate-text 20s linear infinite;
+        animation-direction: reverse;
+        margin-right: 20px;
+    }
+
+    .circle-char {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform:
+            translate(-50%, -50%)
+            rotate(calc(var(--i) * 23deg))  /* 360 / 19 букв ≈ 18.9 */
+            translate(80px)
+            rotate(calc(var(--i) * -18.5deg));
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        display: inline-block;
+        transform-origin: center;
+    }
+
+       .cl{
+            background-color: #FB9B00;
+
+            border-width: 4px;
+            border-color: #8E2126;
+
+       }
+       .g{
+            background-color: #FF7200;
+            border-width: 2px;
+            border-color: #1E1F22;
+       }
+       .f{
+            background-color: #8E2126;
+
+       }
+
+
+
+    @keyframes rotate-text {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
+
+    .el {
+        background-color: transparent; /* Полная прозрачность */
+        border-color: transparent;
+    }
+    .hest {
+         position: absolute;
+         top: 13.5%;    /* Отступ сверху */
+         left: 0%;   /* Отступ слева */
+         background-color: transparent;
+         color: #850402;
+         border-color: #850402;
+         z-index: 1000;
+    }
+
+    /* Стили для планшетов (макс. ширина 992px) */
+    @media (max-width: 992px) {
+
+
+        /* Центровка кнопки настроек для планшета */
+        .hest {
+            position: absolute;
+            top: 14%;
+            left: 13%;
+        }
+
+        .hest img {
+            height: 100px !important;
+            width: 100px !important;
+        }
+    }
+
+    /* Стили для телефонов (макс. ширина 768px) */
+    @media (max-width: 768px) {
+
+
+        /* Центровка кнопки настроек для телефона */
+        .hest {
+            position: absolute;
+            top: 14%;
+            left: 11%;
+        }
+
+        .hest img {
+            height: 80px !important;
+            width: 80px !important;
+        }
+    }
+    @media (max-width: 480px) {
+
+
+        .hest {
+            top: 13%;
+            left: 9%;
+        }
+
+        .hest img {
+            height: 60px !important;
+            width: 60px !important;
+        }
+    }
+
+
+
+    .evro{
+        position: relative;
+        width: 750px;
+        height: 580px;
+        border-radius: 100px;
+        background-color: transparent; /* Полная прозрачность */
+        border-color: transparent;
+        right: 5%;
+    }
+
+     @media (max-width: 992px) {
+                .evro{
+                    position: relative;
+                    left: 1%;
+                    right: 40px;
+                    width: 500px;
+                    height:400px;
+                }
+
+               .germ {
+                 position: absolute;
+                 top: 58%;    /* Отступ сверху */
+                 left: 40%;   /* Отступ слева */
+                 z-index: 1000; /* Чтобы была поверх других элементов */
+              }
+              .nid{
+                 position: absolute;
+                 top: 53%;    /* Отступ сверху */
+                 left: 25%;   /* Отступ слева */
+                 z-index: 1000; /* Чтобы была поверх других элементов */
+              }
+              .frun{
+                 position: absolute;
+                 top: 65%;    /* Отступ сверху */
+                 left: 25%;   /* Отступ слева */
+                 z-index: 1000; /* Чтобы была поверх других элементов */
+              }
+
+              .It{
+                 position: absolute;
+                 top: 74%;    /* Отступ сверху */
+                 left: 41%;   /* Отступ слева */
+                 z-index: 1000; /* Чтобы была поверх других элементов */
+              }
+
+
+     }
+
+     @media (max-width: 480px){
+                .evro{
+                    position: relative;
+                    width: 400px;
+                    height: 300px;
+                    left: 1%;
+                }
+
+               .germ {
+                 position: absolute;
+                 top: 58%;    /* Отступ сверху */
+                 left: 40%;   /* Отступ слева */
+                 z-index: 1000; /* Чтобы была поверх других элементов */
+              }
+              .nid{
+                 position: absolute;
+                 top: 53%;    /* Отступ сверху */
+                 left: 25%;   /* Отступ слева */
+                 z-index: 1000; /* Чтобы была поверх других элементов */
+              }
+              .frun{
+                 position: absolute;
+                 top: 65%;    /* Отступ сверху */
+                 left: 25%;   /* Отступ слева */
+                 z-index: 1000; /* Чтобы была поверх других элементов */
+              }
+
+              .It{
+                 position: absolute;
+                 top: 74%;    /* Отступ сверху */
+                 left: 41%;   /* Отступ слева */
+                 z-index: 1000; /* Чтобы была поверх других элементов */
+              }
+     }
+
+    .open{
+        display: flex !important;
+    }
+
+
+
+        .logo{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 50%;
+            border: 1px solid #850402;
+            width: 90px;
+            height: 90px;
+        }
+      .i{
+            position: fixed;
+            left: 20%;
+            z-index: 5000;
+
+        }
+    @media (max-width: 1280px) {
+        .i{
+            position: fixed;
+            left: 13%;
+            z-index: 5000;
+
+        }
+    }
+    @media (max-width: 9000px) {
+        .logo{
+            display: none;
+        }
+        .nav{
+            display: none;
+
+        }
+
+    }
+
+    /* При разрешении экрана 900px и ниже, выводим на экран иконку бургера */
+    @media (max-width: 1000px) {
+        .logo{
+            display: flex;
+        }
+        .i{
+            display: none;
+        }
+        .nav{
+            display: none;
+            flex-direction: column;
+            position: fixed;
+            height: 100%;
+            width: 40%;
+            top: 0; bottom: 0; left: 0; right: 0;
+            z-index: 5000;
+            overflow-y: auto;
+            padding: 50px 40px;
+            background-color: #FB9B00;
+            animation: burgerAnimation 0.4s;
+        }
+
+        .nav ul{
+            flex-direction: column;
+            row-gap: 30px;
+        }
+    }
+    @media (max-width: 600px) {
+        .logo{
+            display: flex;
+        }
+        .i{
+            display: none;
+        }
+        .nav{
+            display: none;
+            flex-direction: column;
+            position: fixed;
+            height: 100%;
+            width: 40%;
+            top: 0; bottom: 0; left: 0; right: 0;
+            z-index: 5000;
+            overflow-y: auto;
+            padding: 50px 40px;
+            background-color: #FB9B00;
+            animation: burgerAnimation 0.4s;
+        }
+
+        .nav ul{
+            flex-direction: column;
+            row-gap: 30px;
+        }
+        .logo{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 50%;
+            border: 1px solid #850402;
+            width: 60px;
+            height: 60px;
+        }
+    }
+    @keyframes burgerAnimation {
+        from {opacity: 0}
+        to {opacity: 1}
+    }

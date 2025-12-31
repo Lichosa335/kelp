@@ -1,0 +1,369 @@
+    * {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        box-sizing: border-box;
+    }
+
+    body {
+        overflow-x: hidden;
+        background-image: url('png/фон1.png');
+          background-size: cover;        /* заполняет весь экран */
+          background-position: center;   /* центрирует */
+          background-repeat: no-repeat;  /* не повторяет */
+          background-attachment: fixed;  /* фиксирует при скролле */
+          margin: 0;
+          height: 100vh;
+          overflow-x: hidden !important; /* Убирает горизонтальный скролл */
+          max-width: 100vw; /* Ограничивает ширину */
+          width: 100%;
+          color: #91241A;
+    }
+
+    .pl{
+        position: absolute;
+        width: 1560px;
+        bottom: 1%;
+
+    }
+    .container {
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        padding: 20px;
+        display: flex;
+            flex-direction: column;
+    }
+
+    .greeting {
+        text-align: center;
+        margin-bottom: 30px;
+        animation: tex 2s ease-in-out forwards;
+        opacity: 0;
+    }
+
+    @keyframes tex {
+        to {
+            opacity: 1;
+        }
+    }
+
+    /* Стрелка */
+    .arrow-container {
+        position: relative;
+        width: 100%;
+        max-width: 300px;
+        margin: 20px auto;
+        animation: arrow-svg 3s ease-in-out forwards;
+        opacity: 0;
+
+    }
+
+    .arrow-svg {
+        position: relative;
+        left: 130px;
+        bottom: 30px;
+        width: 100%;
+        height: auto;
+        svg-color: #;
+    }
+
+    .arrow-svg path {
+        fill: none;
+        stroke: #8F231A;
+        stroke-width: 6;
+        stroke-linecap: round;
+    }
+
+    @keyframes arrow-svg {
+        0%, 50% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+        .video-demo {
+            position: relative;
+            top: 300px;
+            left: 400px;
+            width: 600px;
+            order: 3;
+            margin: 30px auto;
+            background-color:#F7CD68;
+            animation: r 5s ease-in-out forwards;
+        }
+
+    /* Описание */
+    .beg1 {
+        max-width: 800px;
+        margin: 30px auto;
+        padding: 0px;
+        animation: r 5s ease-in-out forwards;
+        opacity: 0;
+        background-color: #D46223;
+         z-index: 10000;
+    }
+    .beg2{
+        background-color: #F7CD68;
+
+    }
+    .beg1 p {
+        margin: 15px 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+    }
+    .b{
+        position: absolute;
+        z-index: 10000;
+    }
+    .b1{
+        background-color: #F7CD68;
+    }
+    .beg1 .btn {
+        white-space: nowrap;
+
+    }
+
+    @keyframes r {
+        0%, 50% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    /* Кнопка перехода */
+    .map-button {
+        position: fixed;
+        top: 650px;
+        left: 700px;
+        display: block;
+        width: fit-content;
+        margin: 40px auto;
+        padding: 15px 30px;
+        font-size: 1.2rem;
+        animation: b 7s ease-in-out forwards;
+        opacity: 0;
+    }
+
+    @keyframes b {
+        0%, 50% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    /* Десктоп (выше 1200px) */
+    @media (min-width: 890px) {
+        .container {
+            padding: 40px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .arrow-container {
+            position: absolute;
+            top: 15%;
+            right: 10%;
+            max-width: 250px;
+        }
+        .s2{
+            display: none;
+        }
+        .s3{
+            display: none;
+        }
+        .beg{
+            background-color: #FFDE91;
+            width: 550px;
+        }
+        .beg1 {
+            position: absolute;
+            top: 27%;
+            right: 55%;
+            max-width: 600px;
+            margin: 0;
+        }
+
+        .greeting {
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            text-align: left;
+            margin: 0;
+        }
+    }
+
+    /* Планшет (768px - 1199px) */
+    @media (max-width: 1280px) {
+        .container {
+            padding: 30px;
+        }
+        .s1{
+            display: none;
+        }
+        .s2{
+            display: flex;
+        }
+        .s3{
+            display: none;
+        }
+        .arrow-container {
+            max-width: 200px;
+            order: 2;
+            margin: 40px auto;
+        }
+            .arrow-svg {
+                position: relative;
+                left: 210px;
+                width: 100%;
+                height: auto;
+                z-index: 10000;
+            }
+        .video-demo {
+            position: relative;
+            top: 270px;
+            left: 300px;
+            order: 3;
+            margin: 30px auto;
+
+        }
+        .map-button {
+            position: relative;
+            top: 200px;
+            left: 100px;
+            display: block;
+            width: fit-content;
+            margin: 40px auto;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            animation: b 7s ease-in-out forwards;
+            opacity: 0;
+        }
+        .beg1 {
+            position: absolute;
+            left: 0%;
+            order: 4;
+            max-width: 550px;
+        }
+        .beg2{
+            background-color: #F7CD68;
+            max-width: 500px;
+
+        }
+
+        .map-button {
+            order: 5;
+            margin-top: 50px;
+        }
+
+        .beg1 h1 {
+            font-size: 1.5rem;
+        }
+    }
+
+    /* Мобильные (до 767px) */
+    @media (max-width: 890px) {
+        .container {
+            padding: 30px;
+            font-size: 0.5rem;
+        }
+        .t{
+
+        }
+        .s1{
+            display: none;
+        }
+        .s2{
+            display: none;
+        }
+        .s3{
+            display: flex;
+        }
+        .arrow-container {
+            max-width: 200px;
+            order: 2;
+            margin: 40px auto;
+        }
+            .arrow-svg {
+                position: relative;
+                left: 100px;
+                width: 100%;
+                height: auto;
+                z-index: 10000;
+            }
+        .video-demo {
+            position: relative;
+            top: -50px;
+            left: 10px;
+            order: 3;
+            margin: 30px auto;
+
+        }
+        .map-button {
+            position: relative;
+            top: 350px;
+            left: 30px;
+            display: block;
+            width: fit-content;
+            margin: 40px auto;
+            padding: 15px 30px;
+            font-size: 0.5rem;
+            animation: b 7s ease-in-out forwards;
+            opacity: 0;
+        }
+        .beg1 {
+            position: absolute;
+            left: 7%;
+            top: 75%;
+            order: 4;
+            max-width: 550px;
+        }
+        .beg2{
+            background-color: #F7CD68;
+            max-width: 500px;
+
+        }
+
+        .map-button {
+            order: 5;
+            margin-top: 50px;
+        }
+
+        .beg1 h1 {
+            font-size: 1rem;
+        }
+    }
+
+    /* Очень маленькие экраны (до 480px) */
+
+
+    /* Улучшение SVG стрелки для адаптивности */
+    .arrow-container svg {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    /* Ховер эффекты */
+    .btn-light:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        transition: all 0.3s ease;
+    }
+
+    .btn-dark:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        transition: all 0.3s ease;
+    }

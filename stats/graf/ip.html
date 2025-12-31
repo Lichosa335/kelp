@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>График Японии</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="graf1.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="color">
+        <img class="pl" style="z-index: 999" src="../png/палка.png" alt="">
+    <img class="Y" style="z-index: 999" src="../png/Y.png" alt="">
+    <div class="">
+       <div class="position-fixed  " style="z-index: 999">
+           <div class="hest">
+               <button class=" logo btn btn-danger " >
+                   <img src="../png/чип.png" alt="Настройки" style="z-index: 1000; height:140px; width:190px;">
+               </button>
+           </div>
+       </div>
+    </div>
+    <div >
+        <header class="header1">
+            <nav class="nav">
+                <div>
+                    <div>
+                        <button class="btn btn-close text-light"></button>
+                    </div>
+                    <div>
+                        <a href="../index.html" class="btn text-light mt-4"><h4>Главная</h4></a>
+                    </div>
+                    <div>
+                        <a href="../e.html" class="btn text-light "><h4>Карта </h4></a>
+                    </div>
+                    <div>
+                </div>
+            </nav>
+        </header>
+            <div class="p">
+                                <div class=" beg rounded m-2">
+                                    <h3>
+                                        <div class=" rounded beg1 m-3" >
+                                            <p class="m-3">График показывает, что в 2016 году уровень расходов на НИОКР начинался с 3,0–3,1% от ВВП.</p><p class="m-3"> В течение последующих лет наблюдается постепенный рост с небольшими колебаниями: 2017–2018 гг. — сохраняется на уровне около 3,1–3,2%; 2019–2020 гг. — незначительный рост до 3,2–3,3%; 2021–2022 гг. — стабилизация на уровне 3,3–3,4%; </p><p class="m-3"> В 2024 году показатель вырос еще на 1%, составив 1,4% от ВВП.</p>
+                                        </div>
+                                        <div class=" rounded beg1 m-3" >
+                                            <p class="m-2">График демонстрирует устойчивую тенденцию к увеличению инвестиций в НИОКР в Японии, что отражает стратегическое направление страны на инновации.</p>
+                                        </div>
+                                    </h3>
+                                </div>
+                                        <div class=" d beg1 rounded m-3" >
+                                            <h3>
+                                                <p>Интересный факт:</p>
+                                                <p class="beg2">
+                                                    Проблемы сектора: Несмотря на значительные инвестиции, Япония сталкивается с недостатком венчурного бизнеса и гибких механизмов коммерциализации инноваций по сравнению с США и Европой.
+                                                </p>
+                                            </h3>
+                                        </div>
+                            <div class="">
+                <img class="yg" src="../png/угол.png" alt="">
+            </div>
+            <img class="graf" src="../png/Япония.png" alt="Япония">
+            <div>
+                <img class="xel" src="../png/чел.png" alt="">
+            </div>
+            </div>
+    </div>
+        <script>
+            document.querySelector('.logo').addEventListener('click', function() {
+                document.querySelector('.nav').classList.add('open');
+            });
+
+            document.querySelector('.btn-close').addEventListener('click', function() {
+                document.querySelector('.nav').classList.remove('open');
+            });
+
+            // Закрытие меню при клике на ссылку
+        </script>
+</body>
+</html>

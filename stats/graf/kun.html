@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>График Канады</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="graf1.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="color">
+        <img class="pl" style="z-index: 999" src="../png/палка.png" alt="">
+    <img class="Y" style="z-index: 999" src="../png/Kd.png" alt="">
+    <div class="">
+    <div class="">
+       <div class="position-fixed  " style="z-index: 999">
+           <div class="hest">
+               <button class=" logo btn btn-danger " >
+                   <img src="../png/чип.png" alt="Настройки" style="z-index: 1000; height:140px; width:190px;">
+               </button>
+           </div>
+       </div>
+    </div>
+    <div class="p">
+            <header class="header1">
+                <nav class="nav">
+                    <div>
+                        <div>
+                            <button class="btn btn-close text-light"></button>
+                        </div>
+                        <div>
+                            <a href="../index.html" class="btn text-light mt-4"><h4>Главная</h4></a>
+                        </div>
+                        <div>
+                            <a href="../e.html" class="btn text-light "><h4>Карта </h4></a>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+            <div class="row">
+                <div class=" beg rounded m-2">
+                    <h3>
+                        <div class=" rounded beg1 m-3" >
+                            <p class="m-3">График показывает, что в 2016 году доля расходов на НИОКР составляла 1,6% от ВВП.</p><p class="m-3"> Тоже самое наблюдается и в 2017-2018 годах.</p><p class="m-3"> А с 2019 года начинается постепенное увеличение доли расходов: сначала до 1,7%, затем до 1,8%, а с 2023–2024 годов — до 1,9%. К 2026 году прогнозируется достижение уровня в 2% от ВВП.</p>
+                        </div>
+                        <div class=" rounded beg1 m-3">
+                            <p class="m-2">График наглядно демонстрирует постепенное увеличение инвестиций в НИОКР, что отражает стратегическое направление Канады на инновационное развитие и укрепление позиций на мировой арене.</p>
+                        </div>
+
+                    </h3>
+
+                </div>
+                        <div class=" d rounded beg2 m-3">
+                            <h3>
+                                <p>Интересный факт:</p>
+                                <p>
+                                    Кадровый потенциал: в Канаде около 4600 исследователей на миллион человек населения — это высокий показатель, который говорит нам о развитой научной инфраструктуре.
+                                </p>
+                            </h3>
+                        </div>
+            <div class="">
+                <img class="yg" src="../png/угол.png" alt="">
+            </div>
+            <img class="graf" src="../png/Канада.png" alt="Канада">
+            <div>
+                <img class="xel" src="../png/чел.png" alt="">
+            </div>
+
+            </div>
+    </div>
+            <script>
+                document.querySelector('.logo').addEventListener('click', function() {
+                    document.querySelector('.nav').classList.add('open');
+                });
+
+                document.querySelector('.btn-close').addEventListener('click', function() {
+                    document.querySelector('.nav').classList.remove('open');
+                });
+
+                // Закрытие меню при клике на ссылку
+            </script>
+
+</body>
+</html>

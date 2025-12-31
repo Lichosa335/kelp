@@ -1,0 +1,679 @@
+      * {
+            -webkit-touch-callout: none; /* iOS Safari */
+            -webkit-user-select: none; /* Safari */
+            -khtml-user-select: none; /* Konqueror HTML */
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Нестандартное свойство */
+
+            /* Для браузеров, поддерживающих стандартное свойство */
+            user-select: none;
+     }
+     body {
+          background-image: url('../png/фон1.png');
+          background-size: cover;        /* заполняет весь экран */
+          background-position: center;   /* центрирует */
+          background-repeat: no-repeat;  /* не повторяет */
+          background-attachment: fixed;  /* фиксирует при скролле */
+          margin: 0;
+          height: 100vh;
+
+
+    }
+        .logo{
+            position: fixed;
+            left: 1430px;
+            top: 20px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 50%;
+            border: 3px solid #932419;
+            width: 130px;
+            height: 125px;
+        }
+        .nav{
+            display: none;
+            flex-direction: column;
+            position: fixed;
+            height: 33%;
+            width: 15%;
+            border-radius: 60px;
+            top: 10px; bottom: 0; left: 1330px; right: 0;
+            z-index: 5000;
+            overflow-y: auto;
+            padding: 50px 40px;
+            background-color: #91241A;
+            animation: burgerAnimation 0.4s;
+            overflow-x: hidden !important; /* Убирает горизонтальный скролл */
+            max-width: 100vw; /* Ограничивает ширину */
+            width: 100%;
+            overflow-y: hidden !important; /* Убирает вертикальный скролл */
+            max-height: 100vw; /* Ограничивает высоту */
+            height: 100%;
+        }
+    .beg{
+        position: absolute;
+        left: 1%;
+        top: 3%;
+        background-color: #D46223;
+        height: 830px;
+        width: 500px;
+
+
+    }
+    .p{
+        color: #5F0700;
+    }
+    .beg1{
+        background-color:#F7CD68;
+
+    }
+    .beg2{
+        position: absolute;
+        left: 2%;
+        background-color:#FFDE91;
+        border-radius: 15px;
+        width: 800px;
+        height: 280px;
+    }
+    .xel{
+        position: absolute;
+        z-index: 4;
+        width: 350px;
+        height: 250px;
+        top: 80%;
+        left: 83%;
+    }
+
+    .pz{
+        position: absolute;
+        z-index: 1;
+        width: 500px;
+        height: 300px;
+        bottom: 10%;
+        left: 45%;
+
+    }
+    .yg{
+        position: absolute;
+        width: 890px;
+        height: 535px;
+        bottom: 32%;
+        left: 35%;
+
+    }
+    .pl{
+        position: absolute;
+        width: 1560px;
+
+
+    }
+    .Y{
+        position: absolute;
+        left: 84%;
+        top: 53%;
+        width: 156px;
+    }
+     .graf {
+            position: absolute;
+            height: 450px;
+            width: 800px;
+            left: 38%;
+            top: 4%;
+            border-radius: 15px;
+
+     }
+     .d{
+        background-color: #F7CD68;
+        position: absolute;
+        top: 67%;
+        left: 37%;
+        height: 350px;
+        width: 850px;
+        z-index: 1;
+
+     }
+          .tepl {
+            position: absolute;
+            height: 720px;
+            width: 1530px;
+            left: 2%;
+            top: 21%;
+            border-radius: 15px;
+
+          }
+          @media (max-width: 1280px){
+              .tepl {
+                position: absolute;
+                height: 630px;
+                width: 1220px;
+                left: 2%;
+                top: 21%;
+                border-radius: 15px;
+
+            }
+          }
+          @media (max-width: 890px){
+              .tepl {
+                position: absolute;
+                height: 450px;
+                width: 820px;
+                left: 2%;
+                top: 40%;
+                border-radius: 15px;
+
+            }
+          }
+     .btn-cust{
+        position: relative;
+        border-color: transparent;
+        width: 400px;
+        top: 100px;
+        border-radius: 15px;
+        z-index:1000;
+     }
+
+            .h1{
+                font-size: 1.8rem;
+            }
+
+    @media (max-width: 1280px){
+            .h3{
+                font-size: 1rem;
+            }
+            .logo{
+                position: fixed;
+                left: 1180px;
+                top: 20px;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                border-radius: 50%;
+                border: 3px solid #932419;
+                width: 100px;
+                height: 95px;
+            }
+            .nav{
+                display: none;
+                flex-direction: column;
+                position: fixed;
+                height: 33%;
+                width: 15%;
+                border-radius: 60px;
+                top: 10px; bottom: 0; left: 1050px; right: 0;
+                z-index: 5000;
+                overflow-y: auto;
+                padding: 50px 40px;
+                background-color: #91241A;
+                animation: burgerAnimation 0.4s;
+            }
+
+
+    }
+    @media (max-width: 768px){
+            .h1{
+                font-size: 1.5rem;
+            }
+            .logo{
+                position: fixed;
+                left: 1100px;
+                top: 20px;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                border-radius: 50%;
+                border: 3px solid #932419;
+                width: 100px;
+                height: 95px;
+            }
+            .nav{
+                display: none;
+                flex-direction: column;
+                position: fixed;
+                height: 33%;
+                width: 15%;
+                border-radius: 60px;
+                top: 10px; bottom: 0; left: 1050px; right: 0;
+                z-index: 5000;
+                overflow-y: auto;
+                padding: 50px 40px;
+                background-color: #91241A;
+                animation: burgerAnimation 0.4s;
+            }
+
+    }
+    @media (max-width: 480px){
+                    .h1{
+                font-size: 1.5rem;
+            }
+            .logo{
+                position: fixed;
+                left: 1030px;
+                top: 20px;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                border-radius: 50%;
+                border: 3px solid #932419;
+                width: 100px;
+                height: 95px;
+            }
+            .nav{
+                display: none;
+                flex-direction: column;
+                position: fixed;
+                height: 20%;
+                width: 15%;
+                border-radius: 60px;
+                top: 10px; bottom: 0; left: 950px; right: 0;
+                z-index: 5000;
+                overflow-y: auto;
+                padding: 50px 40px;
+                background-color: #91241A;
+                animation: burgerAnimation 0.4s;
+            }
+
+    }
+
+
+
+
+
+
+
+
+
+
+     .png1 {
+            position: absolute;
+            top: 75%;
+            height: 700px;
+            width: 1540px;
+            border-radius: 15px;
+            left: 1%;
+
+     }
+     .png2 {
+            position: absolute;
+            height: 500px;
+            width: 750px;
+            border-radius: 15px;
+            left: 51%;
+            top: 3%;
+
+     }
+     .png3 {
+            position: absolute;
+            left: 1%;
+            top: 3%;
+            height: 500px;
+            width: 750px;
+            border-radius: 15px;
+
+     }
+        .color {
+             background-color: #91241A;
+        }
+
+
+
+        .nav ul{
+            flex-direction: column;
+            row-gap: 30px;
+        }
+        .hest {
+            position: absolute;
+            top: 16%;
+            left: 11%;
+        }
+
+        .hest img {
+            height: 120px !important;
+            width: 150px !important;
+        }
+        .open{
+        display: flex !important;
+     }
+
+     .pl{
+        position: absolute;
+        width: 1560px;
+        height: 1270px;
+     }
+            .yg3{
+                position: absolute;
+                width: 830px;
+                height: 590px;
+                top: -3%;
+                left: -1.7%;
+
+
+            }
+            .yg2{
+                position: absolute;
+                width: 830px;
+                height: 590px;
+                top: -3%;
+                left: 48.3%;
+
+            }
+
+    @media (max-width: 1280px){
+             .yg3{
+                position: absolute;
+                width: 670px;
+                height: 480px;
+                top: -3%;
+                left: -1.7%;
+
+
+            }
+            .yg2{
+                position: absolute;
+                width: 670px;
+                height: 480px;
+                top: -3%;
+                left: 48.3%;
+
+            }
+    }
+    @media (max-width: 890px){
+          .yg3{
+                position: absolute;
+                width: 880px;
+                height: 350px;
+                top: -3%;
+                left: -3%;
+
+
+            }
+            .yg2{
+                position: absolute;
+                width: 880px;
+                height: 350px;
+                top: 84%;
+                left: -3%;
+
+            }
+
+    }
+
+
+
+
+
+    @keyframes burgerAnimation {
+        from {opacity: 0}
+        to {opacity: 1}
+    }
+
+    .beg5{
+        position: absolute;
+        top: 1%;
+        left: 2%;
+        z-index: ;
+        background-color: #8F231B;
+        width: 800px;
+
+    }
+    .t{
+        position: relative;
+        top: 10px;
+        left: 10px;
+        background-color: #FFDE91;
+        width: 700px;
+    }
+
+    @media (max-width: 1280px){
+        position: absolute;
+        top:
+    }
+
+    @media (max-width: 1280px){
+             .png1 {
+                    position: absolute;
+                    top: 70%;
+                    height: 500px;
+                    width: 1200px;
+                    border-radius: 15px;
+                    left: 2%;
+
+             }
+             .png2 {
+                    position: absolute;
+                    height: 400px;
+                    width: 600px;
+                    border-radius: 15px;
+                    left: 1%;
+                    top: %;
+
+             }
+             .png3 {
+                    position: absolute;
+                    left: 51%;
+                    top: %;
+                    height: 400px;
+                    width: 600px;
+                    border-radius: 15px;
+
+             }
+             .logo{
+                position: fixed;
+                left: 1155px;
+                top: 20px;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                border-radius: 50%;
+                border: 3px solid #932419;
+                width: 100px;
+                height: 95px;
+            }
+            .pl{
+                position: absolute;
+                width: 1270px;
+                height: 1050px;
+            }
+
+            }
+
+
+    }
+        @media (max-width: 890px){
+             .png1 {
+                    position: absolute;
+                    top: 75%;
+                    height: 200px;
+                    width: 550px;
+                    border-radius: 15px;
+                    left: 1%;
+
+             }
+             .png2 {
+                    position: absolute;
+                    height: 200px;
+                    width: 200px;
+                    border-radius: 15px;
+                    left: 1%;
+                    top: %;
+
+             }
+             .png3 {
+                    position: absolute;
+                    left: 51.5%;
+                    top: %;
+                    height: 500px;
+                    width: 550px;
+                    border-radius: 15px;
+
+             }
+       }
+       @media (max-width: 1100px){
+             .png1 {
+                    position: absolute;
+                    top: 75%;
+                    height: 500px;
+                    width: 1130px;
+                    border-radius: 15px;
+                    left: 1%;
+
+             }
+             .png2 {
+                    position: absolute;
+                    height: 500px;
+                    width: 550px;
+                    border-radius: 15px;
+                    left: 1%;
+                    top: %;
+
+             }
+             .png3 {
+                    position: absolute;
+                    left: 55.5%;
+                    top: %;
+                    height: 500px;
+                    width: 550px;
+                    border-radius: 15px;
+
+             }
+       }
+       @media (max-width: 980px){
+             .png1 {
+                    position: absolute;
+                    top: 75%;
+                    height: 500px;
+                    width: 1120px;
+                    border-radius: 15px;
+                    left: 1%;
+
+             }
+             .png2 {
+                    position: absolute;
+                    height: 500px;
+                    width: 550px;
+                    border-radius: 15px;
+                    left: 1%;
+                    top: %;
+
+             }
+             .png3 {
+                    position: absolute;
+                    left: 60.5%;
+                    top: %;
+                    height: 500px;
+                    width: 550px;
+                    border-radius: 15px;
+
+             }
+       }
+    @media (max-width: 900px){
+
+             .png1 {
+                    position: absolute;
+                    top: 170%;
+                    height: 550px;
+                    width: 1000px;
+                    border-radius: 15px;
+                    left: 1%;
+
+             }
+             .png2 {
+                    position: absolute;
+                    height: 550px;
+                    width: 1000px;
+                    border-radius: 15px;
+                    left: 1%;
+                    top: 85%;
+
+             }
+             .png3 {
+                    position: absolute;
+                    left: 1%;
+                    top: %;
+                    height: 550px;
+                    width: 1000px;
+                    border-radius: 15px;
+
+             }
+    }
+     @media (max-width: 890px){
+             .png1 {
+                    position: absolute;
+                    top: 90%;
+                    height: 300px;
+                    width: 800px;
+                    border-radius: 15px;
+                    left: 2%;
+
+             }
+             .png2 {
+                    position: absolute;
+                    height: 300px;
+                    width: 800px;
+                    border-radius: 15px;
+                    left: 2%;
+                    top: 3%;
+
+             }
+             .png3 {
+                    position: absolute;
+                    left: 2%;
+                    top: 175%;
+                    height: 300px;
+                    width: 600px;
+                    border-radius: 15px;
+
+             }
+             .logo{
+                position: fixed;
+                left: 730px;
+                top: 20px;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                border-radius: 50%;
+                border: 3px solid #932419;
+                width: 100px;
+                height: 95px;
+            }
+            .nav{
+                display: none;
+                flex-direction: column;
+                position: fixed;
+                height: 60%;
+                width: 20%;
+                border-radius: 60px;
+                top: 10px; bottom: 0; left: 670px; right: 0;
+                z-index: 5000;
+                overflow-y: auto;
+                padding: 50px 40px;
+                background-color: #91241A;
+                animation: burgerAnimation 0.4s;
+            }
+            .pl{
+                position: absolute;
+                width: 850px;
+                height: 970px;
+            }
+
+            }
+
+       }
+       @media (max-width: 890px){
+                 .tepl {
+                    position: absolute;
+                    height: 380px;
+                    width: 80px;
+                    left: 2%;
+                    top: 2%;
+                    border-radius: 15px;
+
+                }
+       }
